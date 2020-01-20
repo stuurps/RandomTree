@@ -11,19 +11,25 @@ library(shiny)
 library(shinyjs)
 library(shinyWidgets)
 
-ui <- fillPage(fluidPage(
-    titlePanel(h2("The Tree ID", align = "center")),
-    #titlePanel(h4("Got 5 minutes?", align = "center")),
-    titlePanel(h4("Click the image to be taken to a random wikipedia tree page...", align = "center")),
-    titlePanel(h5(    em(
-        span("Created by "),
-        a("The Tree ID", href = "mailto:barkerstu@gmail.com"),
-        span(", Jan 2020")), align = "center")),
-    uiOutput("example"),
-                setBackgroundImage(
-                    src = "forest-trees-minimal-art.jpg"),
-                uiOutput("example2")
-
-
+ui <- fillPage(
+    fluidPage(
+        titlePanel(h2("The Tree ID", align = "center")),
+        #titlePanel(h4("Got 5 minutes?", align = "center")),
+        titlePanel(
+            h4(
+                "Click the image to be taken to a random wikipedia tree page...",
+                align = "center"
+            )
+        ),
+        titlePanel(h5(em(
+            span("Created by "),
+            a("The Tree ID", href = "mailto:barkerstu@gmail.com"),
+            span(", Jan 2020")
+        ), align = "center")),
+        uiOutput("example"),
+        setBackgroundImage(src = "forest-trees-minimal-art.jpg"),
+        uiOutput("example2")
+        
+        
     )
 )
