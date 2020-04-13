@@ -8,7 +8,6 @@
 #
 
 library(shiny)
-library(shinyjs)
 library(shinyWidgets)
 
 ui <- fillPage(
