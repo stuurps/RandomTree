@@ -21,3 +21,5 @@ shinyServer(function(input, output) {
     })
     
 })
+
+#deployApp(launch.browser = F)
