@@ -22,7 +22,7 @@ ui <- fillPage(
         ),
         titlePanel(h5(em(
             span("Created by "),
-            a("The Tree ID", href = "mailto:barkerstu@gmail.com"),
+            a("The Tree ID", href = "mailto:thetreeid@gmail.com"),
             span(", Jan 2020")
         ), align = "center")),
         uiOutput("example"),
